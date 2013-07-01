@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LoL Warding Guide</title>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script>
+$(document).ready(function(){
+	$('a.ward').fancybox({
+		padding: 0,
+		transitionIn: 'elastic',
+		transitionOut: 'elastic',
+		titlePosition: 'over'
+	});
+	$('#map').click(function(e){console.log("Location: top:" + (e.layerY-8) + "px;left:" + (e.layerX-8) + "px")});
+});
+</script>
+</head>
+<body>
+	<h1>League of Legends Warding Guide</h1>
+	<div id="map">
+		<a class="ward" title="Bottom River Bush" style="top:794px;left:1002px" href="locations/bot-river-bush.jpg"></a>
+		<a class="ward" title="Bottom Tri-Bush" style="top:842px;left:880px" href="locations/bot-tri.jpg"></a>
+		<a class="pink ward" title="Dragon Pit" style="top:725px;left:856px" href="locations/dragon-pit.jpg"></a>
+		<a class="ward" title="Mid River Ramp Bush" style="top:630px;left:803px" href="locations/mid-ramp-bush.jpg"></a>
+		<a class="ward" title="Behind Dragon" style="top:787px;left:773px" href="locations/behind-dragon.jpg"></a>
+		<a class="ward" title="Red Buff" style="top:805px;left:667px" href="locations/red-buff.jpg"></a>
+		<a class="ward" title="Bottom River" style="top:790px;left:932px" href="locations/bot-river.jpg"></a>
+		<a class="ward" title="Wraiths Bush" style="top:730px;left:563px" href="locations/wraiths-bush.jpg"></a>
+		<a class="ward" title="Above Tier 2 Tower" style="top:840px;left:592px" href="locations/bot-river.jpg"></a>
+		<a class="ward" title="Blue Buff, note position at bottom right edge" style="top:566px;left:998px" href="locations/blue-buff.jpg"></a>
+		<a class="ward" title="Bottom Diving Tri-Bush" style="top:700px;left:1055px" href="locations/bot-tri-dive.jpg"></a>
+		<a class="ward" title="Dragon &amp; Blue Ramp" style="top:714px;left:921px" href="locations/dragon-ramp.jpg"></a>
+		<a class="ward" title="Behind Blue" style="top:532px;left:856px" href="locations/behind-blue.jpg"></a>
+		<a class="ward" title="Behind Red" style="top:718px;left:721px" href="locations/behind-red.jpg"></a>
+		<a class="ward" title="Outside Base Wall" style="top:813px;left:483px" href="locations/outside-base.jpg"></a>
+	</div>
+</body>
+</html>

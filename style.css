@@ -1,0 +1,34 @@
+body {
+	background-color: #222;
+}
+
+#fancybox-title-over {
+	background-image:none;
+	background-color: rgba(0,0,0,0.8);
+	text-align: center;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+color: #ccc;
+}
+
+#map {
+	background-image: url('sr.jpg');
+	width: 1341px;
+	height: 1078px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.ward {
+	display: block;
+	height: 15px;
+	width: 15px;
+	background-color: rgba(100,225,100,0.8);
+	border-radius: 8px;
+	position: absolute;
+}
+
+.pink.ward {
+	background-color: rgba(255,130,170,0.8);
+}
