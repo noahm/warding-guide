@@ -3,17 +3,27 @@
 <head>
 <title>LoL Warding Guide</title>
 <meta charset="UTF-8">
-<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
-<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="magnific/magnific.js"></script>
+<link rel="stylesheet" type="text/css" href="magnific/magnific.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script>
 $(document).ready(function(){
-	$('a.ward').fancybox({
-		padding: 0,
-		transitionIn: 'elastic',
-		transitionOut: 'elastic',
-		titlePosition: 'over'
+	$('#map').magnificPopup({
+		// key: 'ward-image',
+		type: 'image',
+		image: {titleSrc: 'title'},
+		delegate: 'a.ward',
+		mainClass: 'my-mfp-zoom-in',
+		removalDelay: 300,
+		// zoom: {
+		// 	enabled: true,
+		// 	duration: 300,
+		// 	easing: 'ease-in-out',
+		// 	opener: function(openerElement) {
+		// 		return openerElement;
+		// 	}
+		// }
 	});
 	$('#map').click(function(e){console.log("Location: top:" + (e.layerY-8) + "px;left:" + (e.layerX-8) + "px")});
 });
